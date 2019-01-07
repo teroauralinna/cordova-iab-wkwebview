@@ -20,11 +20,21 @@
           Link without _blank works!
         </a>
       </p>
-      <form action="form.html" target="_blank">
-        <input type="submit" name="submit" value="Submit with _blank doesn't work!" />
+      <form method="get" action="form.html" target="_blank">
+        <input type="hidden" name="test" value="1" />
+        <input type="submit" name="submit" value="Submit get with _blank doesn't work!" />
       </form>
-      <form action="form.html">
-        <input type="submit" name="submit" value="Submit without _blank works!" />
+      <form method="get" action="form.html">
+        <input type="hidden" name="test" value="1" />
+        <input type="submit" name="submit" value="Submit get without _blank works!" />
+      </form>
+      <form method="post" action="form.html" target="_blank">
+        <input type="hidden" name="test" value="1" />
+        <input type="submit" name="submit" value="Submit post with _blank doesn't work!" />
+      </form>
+      <form method="post" action="form.html">
+        <input type="hidden" name="test" value="1" />
+        <input type="submit" name="submit" value="Submit post without _blank works!" />
       </form>
     </div>
   </body>
